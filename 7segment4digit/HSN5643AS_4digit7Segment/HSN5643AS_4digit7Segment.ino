@@ -160,10 +160,12 @@ void setup() {
   pinMode(f, OUTPUT); 
   pinMode(g, OUTPUT); 
   pinMode(h, OUTPUT); 
+  pinMode(2, OUTPUT);
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
+  digitalWrite(2, LOW);  
   char_zero();    // Zero
   delay(500);     // Wait for 500 miliseconds (1/5th of a second)
   char_one();     // One
@@ -171,6 +173,7 @@ void loop() {
   char_two();     // Two
   delay(500);  
   char_three();   // Three
+  digitalWrite(2, HIGH);  
   delay(500);  
   char_four();    // Four
   delay(500);  
