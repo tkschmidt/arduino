@@ -160,31 +160,42 @@ void setup() {
   pinMode(f, OUTPUT); 
   pinMode(g, OUTPUT); 
   pinMode(h, OUTPUT); 
+  
   pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
 }
-
 // the loop routine runs over and over again forever:
 void loop() {
-  digitalWrite(2, LOW);  
+  digitalWrite(2, LOW); 
+  digitalWrite(3, HIGH); 
   char_zero();    // Zero
-  delay(500);     // Wait for 500 miliseconds (1/5th of a second)
+  delay(10);     // Wait for 10 miliseconds (1/5th of a second)
+  digitalWrite(2, HIGH); 
+  digitalWrite(3, LOW); 
   char_one();     // One
-  delay(500);  
+  delay(10);  
+   digitalWrite(2, LOW); 
+  digitalWrite(3, HIGH); 
   char_two();     // Two
-  delay(500);  
+  delay(10);  
+  digitalWrite(2, HIGH); 
+  digitalWrite(3, LOW); 
   char_three();   // Three
-  digitalWrite(2, HIGH);  
-  delay(500);  
+  delay(10);  
+     digitalWrite(2, LOW); 
+  digitalWrite(3, HIGH); 
   char_four();    // Four
-  delay(500);  
+  delay(10);  
+  digitalWrite(2, HIGH); 
+  digitalWrite(3, LOW); 
   char_five();    // Five
-  delay(500);  
+  delay(10);  
   char_six();     // Six
-  delay(500);  
+  delay(10);  
   char_seven();   // Seven
-  delay(500);    
+  delay(10);    
   char_eight();   // Eight
-  delay(500);  
+  delay(10);  
   char_nine();    // Nine
-  delay(500);  
+  delay(10);  
 }
